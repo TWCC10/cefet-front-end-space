@@ -14,7 +14,7 @@ const servidorDasImagens = 'https://fegemo.github.io/cefet-front-end/images/',
 
 // o índice da imagem sendo mostrada
 // (inicialmente, é a imagem 0: '01-philae-parts.jpg')
-let indiceDaFotoAtual = 0;
+var indiceDaFotoAtual = 0;
 
 // ...COMECE a implementar aqui <--------------------------------------------
 
