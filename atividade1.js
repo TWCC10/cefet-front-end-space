@@ -14,9 +14,20 @@ const servidorDasImagens = 'https://fegemo.github.io/cefet-front-end/images/',
 
 // o índice da imagem sendo mostrada
 // (inicialmente, é a imagem 0: '01-philae-parts.jpg')
-var indiceDaFotoAtual = 0;
+let indiceDaFotoAtual = 0;
 
 // ...COMECE a implementar aqui <--------------------------------------------
+let todosBotoesEl = document.querySelectorAll('.botao-expandir-retrair');
 
+for (let botaoEl of todosBotoesEl){
+  botaoEl.addEventListener('click',botaoClick);
+}
 
-
+function botaoClick (e)
+{
+  let el = e.currentTarget;
+  if(el.parentNode.classList.toggle('expandido'))
+  el.innerHTML = '-';
+  else
+  el.innerHTML = '+';
+}
